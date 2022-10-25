@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 
-export default function Collection() {
+const Collection = () => {
   const navigate = useNavigate();
 
   return (
@@ -12,3 +12,5 @@ export default function Collection() {
     </div>
   )
 }
+
+export default Collection;

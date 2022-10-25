@@ -5,7 +5,7 @@ export default function Movie({ movie, toggleWatched }) {
         toggleWatched(movie.id)
     }
 
-    // Variables to concatenate the search term url for each movie
+    // Concatenate the search term url for each movie
     let baseGoogle = 'http://www.google.com/search?q=';
     let url = baseGoogle.concat(movie.name, " movie");
   
