@@ -1,0 +1,34 @@
+.heading {
+    color: darkred;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 60px;
+}
+
+.movieList {
+    text-align: center;
+    width: 500px;
+    font-size: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+#centerwrap { 
+    width: 1000px; 
+    margin: 0 auto;    
+}
+
+/* Below code centers */
+#centerThis {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#enlarged {
+    font-size: 20px;
+    transform: scale(1.5);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px; /* Padding between checkbox and movie names */
+}
