@@ -16,7 +16,13 @@ const Collection = () => {
         </div>
         <br />
         <br />
-        <button className='movieList' onClick={() => navigate(-1)}>Back to Your List</button>
+        <button class="button-82-pushable" onClick={()=>navigate(-1)}>
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Back to Your List
+            </span>
+        </button>
     </div>
   )
 }

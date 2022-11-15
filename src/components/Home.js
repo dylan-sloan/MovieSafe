@@ -49,9 +49,28 @@ const Home = () => {
         <h1 className="heading"> MovieSafe </h1>
         <WatchList className="movieList" movies={movies} toggleWatched={toggleWatched}/>
         <input className="movieList" ref={movieNameRef} type="text" />
-        <button className="movieList" onClick={addMovie}>Add Movie</button>
-        <button className="movieList" onClick={()=>navigate("/collection")}>Your Collection</button>
-        <button className="movieList" onClick={handleClearList}>Clear Watched</button>
+        {/* Add the buttons */}
+        <button class="button-82-pushable" onClick={addMovie}>
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Add Movie
+            </span>
+        </button>
+        <button class="button-82-pushable" onClick={()=>navigate("/collection")}>
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Your Collection
+            </span>
+        </button>
+        <button class="button-82-pushable" onClick={handleClearList}>
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Clear Watched
+            </span>
+        </button>
         <div className="movieList">{movies.filter(movie => !movie.watched).length}/{movies.filter(movie => movie.watched).length + movies.filter(movie => !movie.watched).length} left to watch</div>
         </div>
         </>
