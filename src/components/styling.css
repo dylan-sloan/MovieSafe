@@ -12,7 +12,7 @@
     margin: 0 auto;
     display: block;
 }
-
+/* Start of button code */
 .button-82-pushable {
     position: relative;
     border: none;
@@ -121,6 +121,7 @@
   .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
   }
+/* End of button code */
 
 #centerwrap { 
     width: 1000px; 
