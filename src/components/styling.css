@@ -20,7 +20,7 @@
     padding: 0;
     cursor: pointer;
     outline-offset: 4px;
-    transition: filter 250ms;
+    transition: filter 150ms;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -28,8 +28,8 @@
     margin: 0 auto;
     display: block;
     /* Set margins */
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .button-82-shadow {
