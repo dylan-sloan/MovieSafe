@@ -22,6 +22,24 @@ const Home = () => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(movies))
     }, [movies])
 
+    //Allow for enter key to add a movie to the list
+    useEffect(() => {
+        const keyDownHandler = event => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+    
+            // 👇️ add the movie
+            addMovie();
+          }
+        };
+    
+        document.addEventListener('keydown', keyDownHandler);
+    
+        return () => {
+          document.removeEventListener('keydown', keyDownHandler);
+        };
+      }, []);
+
     function toggleWatched(id) {
         const newMovies = [...movies]
         const movie = newMovies.find(movie => movie.id === id)
@@ -47,6 +65,7 @@ const Home = () => {
         setMovies(newMovies)
     }
 
+    //Prevents overwriting collection every time
     /*
     function addToCollection(watchedMovies) {
         // Parse any JSON previously stored in collectedMovies
