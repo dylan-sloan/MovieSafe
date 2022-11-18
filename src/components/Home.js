@@ -84,7 +84,7 @@ const Home = () => {
         <div id="centerwrap">
         <h1 className="heading"> MovieSafe </h1>
         <WatchList className="movieList" movies={movies} toggleWatched={toggleWatched}/>
-        <input className="movieList" ref={movieNameRef} type="text" />
+        <input className="movieList" ref={movieNameRef} type="text" placeholder="Enter movie name" />
         {/* Add the buttons */}
         <button class="button-82-pushable" onClick={addMovie}>
             <span class="button-82-shadow"></span>
