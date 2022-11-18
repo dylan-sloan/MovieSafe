@@ -19,6 +19,7 @@ const Collection = () => {
 
   function clearCollection() {
     localStorage.removeItem("collectedMovies")
+    window.location.reload()
   }
 
   function toggleClicked(id) {
