@@ -133,12 +133,6 @@
     margin: 0 auto;    
 }
 
-#centerThis {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Input field styling */
 input {
   border: 20 px;

@@ -27,7 +27,7 @@ const Collection = () => {
     const movie = newCollection.find(movie => movie.id === id)
     movie.watched = !movie.watched
     setCollectedMovies(newCollection)
-}
+  }
   
   return (
     <div>
