@@ -51,6 +51,7 @@ const Collection = () => {
                 Back to Your List
             </span>
         </button>
+        <div className='movieList'>Total Movies Watched: {collectedMovies.length}</div>
     </div>
   )
 }
