@@ -1,4 +1,5 @@
 import React from 'react'
+import './styling.css'
 
 export default function Movie({ movie, toggleWatched }) {
     function handleMovieClick() {

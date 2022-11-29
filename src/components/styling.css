@@ -1,3 +1,11 @@
+a {
+  color: #282828; 
+}
+
+a:visited {
+  color: #282828;
+}
+
 .heading {
     color: darkred;
     text-align: center;
