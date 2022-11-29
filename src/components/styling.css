@@ -6,6 +6,10 @@ a:visited {
   color: #282828;
 }
 
+a:hover {
+  color: red;
+}
+
 .heading {
     color: darkred;
     text-align: center;
