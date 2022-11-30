@@ -11,7 +11,7 @@ export default function Movie({ movie, toggleWatched }) {
     let url = baseGoogle.concat(movie.name, " movie");
   
     return (
-    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
         <label id='enlarged'>
             <input id='enlarged' type="checkbox" checked={movie.watched} onChange={handleMovieClick} />
             <a href={url} target='_blank' rel="noopener noreferrer">{movie.name}</a>
