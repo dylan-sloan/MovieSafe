@@ -15,8 +15,8 @@ const CollectionClearPage = () => {
     }
 
     return (
-        <div>
-            <h2 className="movieList"> Are you sure you want to clear your collection? </h2>
+        <div className="promptPage">
+            <h2> Are you sure you want to clear your collection? </h2>
             <button class="button-82-pushable" onClick={clearCollection}>
                 <span class="button-82-shadow"></span>
                 <span class="button-82-edge"></span>
