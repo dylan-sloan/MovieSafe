@@ -17,11 +17,6 @@ const Collection = () => {
       localStorage.setItem("collectedMovies", JSON.stringify(collectedMovies))
   }, [collectedMovies])
 
-  function clearCollection() {
-    localStorage.removeItem("collectedMovies")
-    window.location.reload()
-  }
-
   function toggleClicked(id) {
     const newCollection = [...collectedMovies]
     const movie = newCollection.find(movie => movie.id === id)
@@ -37,14 +32,14 @@ const Collection = () => {
         </div>
         <br />
         <br />
-        <button class="button-82-pushable" onClick={clearCollection}>
+        <button class="button-82-pushable" onClick={()=>navigate('/prompt')}>
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
                 Clear Collection
             </span>
         </button>
-        <button class="button-82-pushable" onClick={()=>navigate(-1)}>
+        <button class="button-82-pushable" onClick={()=>navigate('/')}>
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
