@@ -1,9 +1,5 @@
-a {
+a, a:visited {
   color: #282828; 
-}
-
-a:visited {
-  color: #282828;
 }
 
 a:hover {
