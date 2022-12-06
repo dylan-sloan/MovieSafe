@@ -6,7 +6,8 @@ const CollectionClearPage = () => {
     const navigate = useNavigate();
 
     function clearCollection() {
-        localStorage.removeItem("collectedMovies")
+        // Clear all collected movies from local storage
+        localStorage.removeItem("collectedMovies");
         navigate('/collection');
     }
 
