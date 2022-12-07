@@ -58,26 +58,12 @@ const Home = () => {
 
     function handleClearList() {
         const newMovies = movies.filter(movie => !movie.watched)
+        // TODO: Add watchedMovies to local storage without overwriting previous collectedMovies
         const watchedMovies = movies.filter(movie => movie.watched)
         // Checks if movies are being cleared and adds them to collection
         localStorage.setItem("collectedMovies", JSON.stringify(watchedMovies))
-        //addToCollection(watchedMovies)
         setMovies(newMovies)
     }
-
-    //Prevents overwriting collection every time
-    /*
-    function addToCollection(watchedMovies) {
-        // Parse any JSON previously stored in collectedMovies
-        var existingEntries = JSON.parse(localStorage.getItem("collectedMovies"));
-        if(existingEntries == null) existingEntries = [];
-        var entry = watchedMovies;
-        localStorage.setItem("entry", JSON.stringify(entry));
-        // Save collectedMovies back to local storage
-        existingEntries.push(entry);
-        localStorage.setItem("collectedMovies", JSON.stringify(existingEntries));
-    };
-    */
 
     return (
         <>
