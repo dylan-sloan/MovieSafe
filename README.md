@@ -25,10 +25,10 @@ MovieSafe is an app designed with React to improve the movie tracking experience
 
 ## To run the app:
 
-In the project directory, run:
+Download all necessary files and run the launch.bat file.
 
-### `npm start`
+### Important:
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The launch.bat file must match the downloads folder or whichever path the files have been moved to.
 
 ##### Created by Dylan Sloan
