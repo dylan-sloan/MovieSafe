@@ -4,7 +4,7 @@ import WatchList from "./WatchList";
 import { v4 as uuidv4 } from 'uuid'; // Allows for random key generation
 import './styling.css'
 
-//TODO Set up Google Firebase as backend to scale
+//TODO Set up MongoDB/Express
 
 const Home = () => {
     const navigate = useNavigate();
