@@ -19,7 +19,7 @@ MovieSafe is an app designed with React to improve the movie tracking experience
 
 ## Planned Future Features:
 
-- Syncing between devices (use database like Google firebase)
+- Syncing between devices
 - Incorporate movie recommender system
 - Add in a section for each movie's ratings i.e. Rotten Tomatoes, iMDB, etc.
 
