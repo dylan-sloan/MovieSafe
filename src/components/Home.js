@@ -4,8 +4,6 @@ import WatchList from "./WatchList";
 import { v4 as uuidv4 } from 'uuid'; // Allows for random key generation
 import './styling.css'
 
-//TODO Set up MongoDB/Express
-
 const Home = () => {
     const navigate = useNavigate();
     const LOCAL_STORAGE_KEY = 'watchList.movies';
@@ -57,12 +55,20 @@ const Home = () => {
     }
 
     function handleClearList() {
-        const newMovies = movies.filter(movie => !movie.watched)
-        // TODO: Add watchedMovies to local storage without overwriting previous collectedMovies
-        const watchedMovies = movies.filter(movie => movie.watched)
-        // Checks if movies are being cleared and adds them to collection
-        localStorage.setItem("collectedMovies", JSON.stringify(watchedMovies))
-        setMovies(newMovies)
+        const newMovies = movies.filter(movie => !movie.watched);
+        const watchedMovies = movies.filter(movie => movie.watched);
+    
+        // Get existing collectedMovies from local storage
+        const existingCollectedMovies = JSON.parse(localStorage.getItem("collectedMovies")) || [];
+    
+        // Concatenate the new watched movies with the existing collection
+        const updatedCollectedMovies = [...existingCollectedMovies, ...watchedMovies];
+    
+        // Update local storage with the updated collection
+        localStorage.setItem("collectedMovies", JSON.stringify(updatedCollectedMovies));
+    
+        // Update state with the remaining unwatched movies
+        setMovies(newMovies);
     }
 
     return (
