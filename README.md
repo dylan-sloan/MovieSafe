@@ -1,8 +1,8 @@
 # MovieSafe
 
-You know those movies that you've been meaning to watch for years? What if I told you there was an easier way to keep track of them. You may have them on the notes app on your phone, but MovieSafe intends to be a much better way to keep track of them.
+You know those movies that you've been meaning to watch for years? If you are anything like me, I was keeping a list on my notes app on my phone. But I knew there could be a better way to keep track. MovieSafe intends to answer this.
 
-MovieSafe is an app designed with React to improve the movie tracking experience. More features are currently in development, this is an early prototype.
+MovieSafe is an app designed with React to improve the movie tracking experience. More features are currently in development.
 
 ## Features
 
