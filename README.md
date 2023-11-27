@@ -10,7 +10,7 @@ MovieSafe is an app designed with React to improve the movie tracking experience
 - Automatic in-browser storage
 - Clicking on the movie title will take you to the movie's Google page
 - Clear watched movies from your list
-- Collection page to keep track of watched movies (in development)
+- Collection page to keep a history of watched movies
 
 ## Photos
 
