@@ -4,7 +4,7 @@ import Collection from "./components/Collection";
 import CollectionClearPage from "./components/CollectionClearPage";
 import Home from "./components/Home";
 
-//TODO Set up Google Firebase as backend to scale
+//TODO Set up backend to scale
 
 function App() {
 

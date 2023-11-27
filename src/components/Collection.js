@@ -26,7 +26,8 @@ const Collection = () => {
   
   return (
     <div>
-        <h1 className="heading"> Your Collection </h1>
+        <h1 className="collectionHeading"> Your Collection </h1>
+        <div className='totalWatched'>{collectedMovies.length} Movies Watched</div>
         <div className='movieList'>
           {<WatchList className="movieList" movies={collectedMovies} toggleWatched={toggleClicked}></WatchList>}
         </div>
@@ -46,7 +47,6 @@ const Collection = () => {
                 Back to Your List
             </span>
         </button>
-        <div className='movieList'>Total Movies Watched: {collectedMovies.length}</div>
     </div>
   )
 }
