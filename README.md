@@ -3,6 +3,7 @@
 You know those movies that you've been meaning to watch for years? If you are anything like me, I was keeping a list on my notes app on my phone. But I knew there could be a better way to keep track. MovieSafe intends to answer this.
 
 MovieSafe is an app designed with React to improve the movie tracking experience. More features are currently in development.
+[Try it out for yourself!](https://dylan-sloan.github.io/MovieSafe/)
 
 ## Features
 
@@ -19,16 +20,12 @@ MovieSafe is an app designed with React to improve the movie tracking experience
 
 ## Planned Future Features:
 
+- THE BIG ONE: iOS Release
 - Syncing between devices
 - Incorporate movie recommender system
 - Add in a section for each movie's ratings i.e. Rotten Tomatoes, iMDB, etc.
 
 ## To run the app:
-
-Download all necessary files and run the launch.bat file.
-
-### Important:
-
-The launch.bat file must match the downloads folder or whichever path the files have been moved to.
+Click this link: [MovieSafe](https://dylan-sloan.github.io/MovieSafe/)
 
 ##### Created by Dylan Sloan
