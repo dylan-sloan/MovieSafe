@@ -23,13 +23,26 @@ const Collection = () => {
     movie.watched = !movie.watched
     setCollectedMovies(newCollection)
   }
+
+  function removeMovie(id) {
+    const newCollection = collectedMovies.filter((movie) => movie.id !== id);
+    setCollectedMovies(newCollection);
+  }
   
   return (
     <div>
         <h1 className="collectionHeading"> Your Collection </h1>
         <div className='totalWatched'>{collectedMovies.length} Movies Watched</div>
         <div className='movieList'>
-          {<WatchList className="movieList" movies={collectedMovies} toggleWatched={toggleClicked}></WatchList>}
+          {
+            <WatchList
+              className="movieList"
+              movies={collectedMovies}
+              toggleWatched={toggleClicked}
+              removeMovie={removeMovie}
+            >
+            </WatchList>
+          }
         </div>
         <br />
         <br />
@@ -37,14 +50,14 @@ const Collection = () => {
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
-                Clear Collection
+                Clear Entire Collection
             </span>
         </button>
         <button class="button-82-pushable" onClick={()=>navigate('/')}>
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
-                Back to Your List
+                Back
             </span>
         </button>
     </div>
