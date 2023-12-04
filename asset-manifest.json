@@ -1,13 +1,13 @@
 {
-  "main.css": "/MovieSafe/static/css/main.0649362d.chunk.css",
-  "main.js": "/MovieSafe/static/js/main.0cebba95.chunk.js",
-  "main.js.map": "/MovieSafe/static/js/main.0cebba95.chunk.js.map",
+  "main.css": "/MovieSafe/static/css/main.031a68d3.chunk.css",
+  "main.js": "/MovieSafe/static/js/main.c3981d12.chunk.js",
+  "main.js.map": "/MovieSafe/static/js/main.c3981d12.chunk.js.map",
   "static/js/1.9019674f.chunk.js": "/MovieSafe/static/js/1.9019674f.chunk.js",
   "static/js/1.9019674f.chunk.js.map": "/MovieSafe/static/js/1.9019674f.chunk.js.map",
   "runtime~main.js": "/MovieSafe/static/js/runtime~main.eceb91c9.js",
   "runtime~main.js.map": "/MovieSafe/static/js/runtime~main.eceb91c9.js.map",
-  "static/css/main.0649362d.chunk.css.map": "/MovieSafe/static/css/main.0649362d.chunk.css.map",
+  "static/css/main.031a68d3.chunk.css.map": "/MovieSafe/static/css/main.031a68d3.chunk.css.map",
   "index.html": "/MovieSafe/index.html",
-  "precache-manifest.1ece306d7a955dcf15cf2750e08adf94.js": "/MovieSafe/precache-manifest.1ece306d7a955dcf15cf2750e08adf94.js",
+  "precache-manifest.53c40a7f2956d4eb3e574ec7f2acf6b9.js": "/MovieSafe/precache-manifest.53c40a7f2956d4eb3e574ec7f2acf6b9.js",
   "service-worker.js": "/MovieSafe/service-worker.js"
 }
