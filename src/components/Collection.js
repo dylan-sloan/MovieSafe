@@ -33,7 +33,7 @@ const Collection = () => {
     <div>
         <h1 className="collectionHeading"> Your Collection </h1>
         <div className='totalWatched'>{collectedMovies.length} Movies Watched</div>
-        <div className='movieList'>
+        <div className='movieListContainer'>
           {
             <WatchList
               className="movieList"
