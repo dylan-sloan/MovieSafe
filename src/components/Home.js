@@ -82,39 +82,44 @@ const Home = () => {
 
     return (
         <>
-        <div id="centerwrap">
-        <h1 className="heading"> MovieSafe </h1>
-        <WatchList
-            className="movieList"
-            movies={movies}
-            toggleWatched={toggleWatched}
-            removeMovie={removeMovie}
-        />
-        <input className="movieList" ref={movieNameRef} type="text" placeholder="Enter movie name" />
-        {/* Add the buttons */}
-        <button class="button-82-pushable" onClick={addMovie}>
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-            <span class="button-82-front text">
-                Add Movie
-            </span>
-        </button>
-        <button class="button-82-pushable" onClick={()=>navigate("/collection")}>
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-            <span class="button-82-front text">
-                Your Collection
-            </span>
-        </button>
-        <button class="button-82-pushable" onClick={handleClearList}>
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-            <span class="button-82-front text">
-                Move Watched → Collection
-            </span>
-        </button>
-        <div className="movieList">{movies.filter(movie => !movie.watched).length}/{movies.filter(movie => movie.watched).length + movies.filter(movie => !movie.watched).length} left to watch</div>
-        </div>
+            <div>
+                <h1 className="heading"> MovieSafe </h1>
+                <WatchList
+                    className="movieList"
+                    movies={movies}
+                    toggleWatched={toggleWatched}
+                    removeMovie={removeMovie}
+                />
+                <input 
+                    className="movieList"
+                    ref={movieNameRef} 
+                    type="text" 
+                    placeholder="Enter movie name"
+                />
+                {/* Add the buttons */}
+                <button class="button-82-pushable" onClick={addMovie}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Add Movie
+                    </span>
+                </button>
+                <button class="button-82-pushable" onClick={()=>navigate("/collection")}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Your Collection
+                    </span>
+                </button>
+                <button class="button-82-pushable" onClick={handleClearList}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Move Watched → Collection
+                    </span>
+                </button>
+                <div className="movieList">{movies.filter(movie => !movie.watched).length}/{movies.filter(movie => movie.watched).length + movies.filter(movie => !movie.watched).length} left to watch</div>
+            </div>
         </>
     )
 }

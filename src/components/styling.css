@@ -15,6 +15,8 @@ a:hover {
   color: darkred;
   text-align: center;
   text-decoration-line: underline;
+  display: flex;
+  justify-content: center;
   font-size: 60px;
 }
 
@@ -167,11 +169,6 @@ a:hover {
 }
 /* End of button code */
 
-#centerwrap { 
-    width: 1000px; 
-    margin: 0 auto;
-}
-
 /* Input field styling */
 input {
   border: 20 px;
@@ -184,6 +181,6 @@ input {
     font-size: 20px;
     transform: scale(1.5);
     margin-top: 5px;
-    margin-bottom: 20px;
-    margin-right: 10px; /* Padding between checkbox and movie names */
+    margin-bottom: 15px;
+    margin-right: 13px; /* Padding between checkbox and movie names */
 }
