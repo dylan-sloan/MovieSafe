@@ -20,18 +20,18 @@ export default function Movie({ movie, toggleWatched, removeMovie }) {
   
     return (
     <div style={{display: 'flex', justifyContent: 'center'}}>
-        <label id='enlarged'>
+        <label id='movieInList'>
             <input 
-            id='enlarged' 
-            type="checkbox" 
-            checked={movie.watched} 
-            onChange={handleMovieClick} 
+                id='movieInList' 
+                type="checkbox" 
+                checked={movie.watched} 
+                onChange={handleMovieClick} 
             />
             <a 
-            href={url} 
-            target='_blank' 
-            rel="noopener noreferrer">
-                {movie.name}
+                href={url} 
+                target='_blank' 
+                rel="noopener noreferrer">
+                    {movie.name}
             </a>
             <button
                 onClick={handleRemoveClick}

@@ -24,10 +24,10 @@ export default function WatchList({ movies, toggleWatched, removeMovie }) {
   return (
     movies.map(movie => {
         return <Movie 
-        key={movie.id}
-        toggleWatched={toggleWatched}
-        removeMovie={removeMovie}
-        movie={movie}
+          key={movie.id}
+          toggleWatched={toggleWatched}
+          removeMovie={removeMovie}
+          movie={movie}
         />
     })
   )

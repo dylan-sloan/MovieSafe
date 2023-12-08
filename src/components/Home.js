@@ -84,12 +84,14 @@ const Home = () => {
         <>
             <div>
                 <h1 className="heading"> MovieSafe </h1>
-                <WatchList
-                    className="movieList"
-                    movies={movies}
-                    toggleWatched={toggleWatched}
-                    removeMovie={removeMovie}
-                />
+                <div className="movieListContainer">
+                    <WatchList
+                        className="movieList"
+                        movies={movies}
+                        toggleWatched={toggleWatched}
+                        removeMovie={removeMovie}
+                    />
+                </div>
                 <input 
                     className="movieList"
                     ref={movieNameRef} 
