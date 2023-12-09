@@ -7,8 +7,12 @@ import './styling.css'
 const Home = () => {
     const navigate = useNavigate();
     const LOCAL_STORAGE_KEY = 'watchList.movies';
+    const DARK_MODE_KEY = 'darkMode';
 
     const [movies, setMovies] = useState([]);
+
+    const initialDarkMode = JSON.parse(localStorage.getItem(DARK_MODE_KEY)) || false;
+    const [darkMode, setDarkMode] = useState(initialDarkMode);
     const movieNameRef = useRef();
 
     useEffect(() => {
@@ -39,6 +43,11 @@ const Home = () => {
           document.removeEventListener('keydown', keyDownHandler);
         };
       }, []);
+
+    useEffect(() => {
+        // Save dark mode state to localStorage whenever it changes
+        localStorage.setItem(DARK_MODE_KEY, JSON.stringify(darkMode));
+    })
 
     function toggleWatched(id) {
         const newMovies = [...movies]
@@ -80,10 +89,17 @@ const Home = () => {
         setMovies(newMovies);
     }
 
+    function toggleDarkMode() {
+        setDarkMode(prevDarkMode => !prevDarkMode);
+    }
+
     return (
         <>
-            <h1 className="heading"> MovieSafe </h1>
-            <div className="movieListContainer">
+            <h1 className={`heading ${darkMode ? 'dark-heading' : 'light-heading'}`}> MovieSafe </h1>
+            <button className="darkModeButton" onClick={toggleDarkMode}>
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
+            <div className={`movieListContainer ${darkMode ? 'dark-mode' : 'light-mode'}`}>
                 <WatchList
                     className="movieList"
                     movies={movies}
@@ -91,35 +107,37 @@ const Home = () => {
                     removeMovie={removeMovie}
                 />
             </div>
-            <input 
-                className="movieList"
-                ref={movieNameRef} 
-                type="text" 
-                placeholder="Enter movie name"
-            />
-            {/* Add the buttons */}
-            <button class="button-82-pushable" onClick={addMovie}>
-                <span class="button-82-shadow"></span>
-                <span class="button-82-edge"></span>
-                <span class="button-82-front text">
-                    Add Movie
-                </span>
-            </button>
-            <button class="button-82-pushable" onClick={()=>navigate("/collection")}>
-                <span class="button-82-shadow"></span>
-                <span class="button-82-edge"></span>
-                <span class="button-82-front text">
-                    Your Collection
-                </span>
-            </button>
-            <button class="button-82-pushable" onClick={handleClearList}>
-                <span class="button-82-shadow"></span>
-                <span class="button-82-edge"></span>
-                <span class="button-82-front text">
-                    Move Watched → Collection
-                </span>
-            </button>
-            <div className="movieList">{movies.filter(movie => !movie.watched).length}/{movies.filter(movie => movie.watched).length + movies.filter(movie => !movie.watched).length} left to watch</div>
+            <div className={`bottomContainer ${darkMode ? 'dark-bottom' : 'light-bottom'}`}>
+                <input 
+                    className="movieList"
+                    ref={movieNameRef} 
+                    type="text" 
+                    placeholder="Enter movie name"
+                />
+                {/* Add the buttons */}
+                <button class="button-82-pushable" onClick={addMovie}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Add Movie
+                    </span>
+                </button>
+                <button class="button-82-pushable" onClick={()=>navigate("/collection")}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Your Collection
+                    </span>
+                </button>
+                <button class="button-82-pushable" onClick={handleClearList}>
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Move Watched → Collection
+                    </span>
+                </button>
+                <div className="movieList">{movies.filter(movie => !movie.watched).length}/{movies.filter(movie => movie.watched).length + movies.filter(movie => !movie.watched).length} left to watch</div>
+            </div>
         </>
     )
 }
