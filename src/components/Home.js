@@ -105,7 +105,7 @@ const Home = () => {
         <>
             <h1 className={`heading ${darkMode ? 'dark-heading' : 'light-heading'}`}> MovieSafe </h1>
             <button className="darkModeButton" onClick={toggleDarkMode}>
-                {darkMode ? 'Light Mode' : 'Dark Mode'}
+                Toggle Dark Mode
             </button>
             <div className={`movieListContainer ${darkMode ? 'dark-mode' : 'light-mode'}`}>
                 <WatchList

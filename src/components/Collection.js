@@ -54,11 +54,11 @@ const Collection = () => {
   
   return (
     <div>
-        <h1 className={`collectionHeading ${darkMode ? 'dark-heading' : 'light-heading'}`}> Your Collection </h1>
+        <h1 className={`${darkMode ? 'dark-heading' : 'light-heading'}`}> Your Collection </h1>
         <button className="darkModeButton" onClick={toggleDarkMode}>
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
+          Toggle Dark Mode
         </button>
-        <div className='totalWatched'>{collectedMovies.length} Movies Watched</div>
+        <div className={`${darkMode ? 'totalWatched-dark' : 'totalWatched-light'}`}>{collectedMovies.length} Movies Watched</div>
         <div className={`movieListContainer ${darkMode ? 'dark-mode' : 'light-mode'}`}>
           {
             <WatchList

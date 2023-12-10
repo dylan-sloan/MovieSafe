@@ -84,13 +84,23 @@ a:hover {
   display: block;
 }
 
-.totalWatched {
+.totalWatched-light {
   text-align: center;
   font-size: 22px;
   font-family: sans-serif;
   font-weight: bolder;
   font-style: italic;
   padding-bottom: 1%;
+}
+
+.totalWatched-dark {
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  padding-bottom: 1%;
+  color: lightcoral;
 }
 
 .promptPage-light {
@@ -121,7 +131,8 @@ a:hover {
     left: 10px;
     background-color: #cbd0d5;
     color: #333;
-    border: none;
+    border: 2px solid red;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
