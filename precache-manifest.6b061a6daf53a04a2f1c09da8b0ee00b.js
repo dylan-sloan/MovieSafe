@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "65317b23f04c3f53c134",
-    "url": "/MovieSafe/static/css/main.61e787f6.chunk.css"
+    "revision": "f96d87cc8cb5535b2ba8",
+    "url": "/MovieSafe/static/css/main.bcfc6af1.chunk.css"
   },
   {
-    "revision": "65317b23f04c3f53c134",
-    "url": "/MovieSafe/static/js/main.65317b23.chunk.js"
+    "revision": "f96d87cc8cb5535b2ba8",
+    "url": "/MovieSafe/static/js/main.f96d87cc.chunk.js"
   },
   {
     "revision": "9019674f54aa45f4ec17",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/MovieSafe/static/js/runtime~main.eceb91c9.js"
   },
   {
-    "revision": "27a63f0f8ed17f822c2df83219307d2b",
+    "revision": "1a2ec56c2605132a6c1decb3a0229141",
     "url": "/MovieSafe/index.html"
   }
 ];
