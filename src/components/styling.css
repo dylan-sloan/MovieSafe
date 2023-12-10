@@ -93,13 +93,26 @@ a:hover {
   padding-bottom: 1%;
 }
 
-.promptPage {
+.promptPage-light {
   text-align: center;
   width: 500px;
   font-size: 30px;
-  margin: 0 auto;
-  display: block;
-  padding-top: 5%;
+  color: #282828;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promptPage-dark {
+  text-align: center;
+  width: 500px;
+  font-size: 30px;
+  color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .darkModeButton {
