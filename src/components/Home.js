@@ -42,12 +42,20 @@ const Home = () => {
         return () => {
           document.removeEventListener('keydown', keyDownHandler);
         };
-      }, []);
+    }, []);
 
     useEffect(() => {
+        // Update body background color if dark mode
+        document.body.style.backgroundColor = darkMode ? '#282828' : '#f2f3f4';
+
         // Save dark mode state to localStorage whenever it changes
         localStorage.setItem(DARK_MODE_KEY, JSON.stringify(darkMode));
-    })
+
+        // Cleanup: reset body background color when component unmounts
+        return () => {
+            document.body.style.backgroundColor = '';
+        };
+    }, [darkMode]);
 
     function toggleWatched(id) {
         const newMovies = [...movies]
