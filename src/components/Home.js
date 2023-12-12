@@ -117,7 +117,7 @@ const Home = () => {
             </div>
             <div className={`bottomContainer ${darkMode ? 'dark-bottom' : 'light-bottom'}`}>
                 <input 
-                    className="movieList"
+                    className={`${darkMode ? 'inputField-dark' : 'inputField-light'}`}
                     ref={movieNameRef} 
                     type="text" 
                     placeholder="Enter movie name"

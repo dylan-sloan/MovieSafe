@@ -84,6 +84,27 @@ a:hover {
   display: block;
 }
 
+.inputField-light {
+  text-align: center;
+  width: 500px;
+  font-size: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+.inputField-dark {
+  text-align: center;
+  width: 500px;
+  font-size: 30px;
+  margin: 0 auto;
+  display: block;
+  background-color: #ccc;
+}
+
+.inputField-dark::placeholder {
+  color: #3b444b;
+}
+
 .totalWatched-light {
   text-align: center;
   font-size: 22px;
