@@ -4,11 +4,21 @@ body {
 }
 
 a, a:visited {
-  color: red;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: saddlebrown;
+}
+
+.dark-mode a, .dark-mode a:visited {
+  color: lightcoral;
+  text-decoration: none;
+}
+
+.dark-mode a:hover {
+  color: #ccc;
 }
 
 /* Dark mode styles */
