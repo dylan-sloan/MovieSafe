@@ -156,24 +156,47 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-.darkModeButton {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #cbd0d5;
-    color: #333;
-    border: 2px solid red;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
 ::placeholder {
 	color: #cbd0d5;
 }
 
-/* Start of button code */
+.darkModeButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.darkModeButton:active {
+  background-color: #006AE8;
+}
+
+.darkModeButton:hover {
+  background-color: #1C84FF;
+}
+
 .button-82-pushable {
   position: relative;
   border: none;
